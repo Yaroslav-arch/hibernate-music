@@ -11,8 +11,9 @@ public class Main {
     TrackDao trackDao = new TrackDao();
 
     public static void main(String[] args) {
-        Main main = new Main();
 
+
+        Main main = new Main();
 
         Album album = new Album("Fear of the dark");
         Artist artist = new Artist("Iron Maiden");
@@ -37,6 +38,7 @@ public class Main {
         main.orderDao.saveOrder(order);
         main.trackDao.saveTrack(track);
 
+        Service.run();
     }
 
     public void bulkInsertTrack() {
