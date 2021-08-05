@@ -31,12 +31,12 @@ public class Main {
         order.setCustomer(customer);
         album.getOrders().add(order);
 
-
+//        main.trackDao.saveTrack(track);
 //        main.artistDao.saveArtist(artist);
 //        main.albumDao.saveAlbum(album);
 //        main.customerDao.saveCustomer(customer);
 //        main.orderDao.saveOrder(order);
-//        main.trackDao.saveTrack(track);
+
 
         Service.run();
     }
