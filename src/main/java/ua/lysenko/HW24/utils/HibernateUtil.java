@@ -15,7 +15,7 @@ public class HibernateUtil {
         return new Configuration().configure().buildSessionFactory();
     }
 
-//    public static SessionFactory getSessionFactory() {
+    //    public static SessionFactory getSessionFactory() {
 //        if (sessionFactory == null) {
 //            try {
 //                registry = new StandardServiceRegistryBuilder().configure().build();

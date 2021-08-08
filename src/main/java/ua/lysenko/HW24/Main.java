@@ -30,12 +30,11 @@ public class Main {
         track.setAlbum(album);
         order.setCustomer(customer);
         album.getOrders().add(order);
+        track.setArtist(artist);
 
-//        main.trackDao.saveTrack(track);
-//        main.artistDao.saveArtist(artist);
-//        main.albumDao.saveAlbum(album);
-//        main.customerDao.saveCustomer(customer);
-//        main.orderDao.saveOrder(order);
+        main.trackDao.saveTrack(track);
+        main.customerDao.saveCustomer(customer);
+        main.orderDao.saveOrder(order);
 
 
         Service.run();

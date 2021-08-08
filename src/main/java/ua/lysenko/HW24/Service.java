@@ -17,7 +17,7 @@ public class Service {
     static TrackDao trackDao = new TrackDao();
 
     public static void run() {
-        System.out.println("Please choose operation: 1 Save track(album,artist) \n 2 Create customer \n 3 Get track by ID");
+        System.out.println("Please choose operation: \n 1 Save track(album,artist) \n 2 Create customer \n 3 Get track by ID");
 
         switch (scanner.nextInt()) {
             case 1 -> saveTrack();
@@ -26,6 +26,7 @@ public class Service {
                 System.out.println("Please enter track ID");
                 trackDao.getTrack(scanner.nextLong());
             }
+            case 0 -> System.exit(0);
         }
     }
 
